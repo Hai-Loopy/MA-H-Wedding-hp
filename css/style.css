@@ -276,7 +276,7 @@ section {
 }
 
 /* Optional: add a subtle dark/bright overlay if the text is hard to read on the image */
-.card section.intro3::before {
+/* .card section.intro3::before {
     content: "";
     position: absolute;
     top: 0;
@@ -286,7 +286,7 @@ section {
     background: rgba(0, 0, 0, 0.25);   /* adjust opacity as needed (0.2 - 0.4 is common) */
     z-index: 1;
     pointer-events: none;
-}
+} */
 
 .card section.intro .content {
     display: block;
