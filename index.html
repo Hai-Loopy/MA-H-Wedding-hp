@@ -10,8 +10,8 @@
     <!-- ★★★ SOCIAL PREVIEW TAGS - ADD THESE ★★★ -->
     <meta property="og:title" content="Wedding Invitation - Hai & Mai Anh">
     <meta property="og:description" content="25 April 2026 | 6:00 PM | Sai Gon, Vietnam">
-    <meta property="og:image" content="https://yourdomain.com/images/preview.jpg">  <!-- ← CHANGE TO YOUR REAL IMAGE URL -->
-    <meta property="og:url" content="https://yourdomain.com">                   <!-- ← your actual website URL -->
+    <meta property="og:image" content="https://github.com/Hai-Loopy/MA-H-Wedding2/blob/main/images/preview.png">  <!-- ← CHANGE TO YOUR REAL IMAGE URL -->
+    <meta property="og:url" content="https://ma-h-wedding2.vercel.app/">                   <!-- ← your actual website URL -->
     <meta property="og:type" content="website">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -430,6 +430,27 @@
                 audio.pause();
             });
         }
+    </script>
+                
+    <script>
+        // Location button - opens Google Maps in the SAME tab (no blank tab)
+        const locationBtn = document.getElementById('location-btn');
+        if (locationBtn) {
+            locationBtn.addEventListener('click', function(e) {
+                e.preventDefault();                 // stop any old behavior
+                const address = "10A Jalan Seri Ampang 2, Kampung Pisang, 47300 Subang, Selangor"; // ← CHANGE to your exact venue
+                const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+                window.location.href = mapsUrl;     // opens in same tab
+            });
+        }
+
+        // If you uncomment the RSVP button later, add this too:
+        // const rsvpBtn = document.getElementById('rsvp-btn');
+        // if (rsvpBtn) {
+        //     rsvpBtn.addEventListener('click', function() {
+        //         window.location.href = "https://forms.gle/YOUR_RSVP_FORM_LINK_HERE"; // ← your Google Form
+        //     });
+        // }
     </script>
 </body>
 
