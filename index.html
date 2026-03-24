@@ -385,7 +385,12 @@
 
     <!-- Custom Js -->
     <script src="./js/main.js"></script>
-                
+    <script>
+    document.querySelector('.overlay').addEventListener('click', function() {
+        document.querySelector('.wrapper').style.display = 'none';
+        document.querySelector('.card').style.display = 'block';
+    });
+</script>           
     <!-- Custom Js -->
     <!-- <script src="./js/main.js"></script> -->
 
