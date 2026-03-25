@@ -512,7 +512,14 @@ document.addEventListener("DOMContentLoaded", () => {
         audio.style.width = "100%";      // Make sure it's full width
     }
 });
-
+// Ensure audio controls are visible and working
+document.addEventListener("DOMContentLoaded", () => {
+    const audio = document.getElementById("audio-player");
+    if (audio) {
+        audio.controls = true;           // Force show controls
+        audio.style.width = "100%";      // Make sure it's full width
+    }
+});
 
 
 
