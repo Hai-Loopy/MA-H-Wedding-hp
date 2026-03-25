@@ -652,14 +652,16 @@ section {
 }
 /* ==================== COUNTDOWN POSITION & SAKURA COLOR ==================== */
 .card section.info .countdown {
-    margin-top: 250px !important;     /* ← Change this number to move it lower */
+    margin-top: 400px !important;     /* ← Change this number to move it lower */
     width: 50%;
     padding: 0 15px;
 }
 
 /* Sakura Pink Color for the boxes */
 .card section.info .countdown .counter-boxes .count-box {
-    background-color: #F8C8DC !important;     /* Soft sakura pink */
+    width: 50px !important;           /* ← Change this to make smaller */
+    height: 50px !important;
+    background-color: #F3CFC6 !important;     /* Soft sakura pink */
     border: 2px solid #ff6b9d !important;
     box-shadow: 0 6px 15px rgba(255, 107, 157, 0.4) !important;
 }
@@ -668,11 +670,13 @@ section {
 .card section.info .countdown .counter-boxes .count-box h1 {
     color: #ffffff !important;
     text-shadow: 0 2px 4px rgba(0,0,0,0.25) !important;
+    font-size: 1.7rem !important;     /* Smaller numbers */
 }
 
 /* Labels (Ngày, Giờ, etc.) */
 .card section.info .countdown .counter-boxes .count-box span {
     color: #fff0f5 !important;
+    font-size: 0.75rem !important;
 }
 
 
