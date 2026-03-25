@@ -11,16 +11,20 @@
 //    audioPlayer.play();  // Start playing the audio
 // });
 
+// Envelope click → open card + start music
 document.getElementById("toggle-content").addEventListener("click", function () {
     const wrapper = document.querySelector(".wrapper");
     const card = document.querySelector(".card");
     const audioPlayer = document.getElementById("audio-player");
 
-    // Start music immediately when envelope is clicked
+    // Start music immediately
     if (audioPlayer) {
         audioPlayer.muted = false;
-        audioPlayer.volume = 0.8;
-        audioPlayer.play().catch(() => {});
+        audioPlayer.volume = 0.75;
+        
+        audioPlayer.play().catch(err => {
+            console.log("Music play prevented by browser:", err);
+        });
     }
 
     // Visual transition
