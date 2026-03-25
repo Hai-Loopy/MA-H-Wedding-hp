@@ -341,12 +341,10 @@ function toggleMenu(menuId, event) {
 
 // Function to close all menus
 function closeAllMenus() {
-    for (const menuId of Object.values(toggleButtons)) {
-        const menu = document.getElementById(menuId);
-        if (menu.classList.contains('open')) {
-            menu.classList.remove('open'); // Close the menu
-        }
-    }
+    const allMenus = document.querySelectorAll('.toggle-menu');
+    allMenus.forEach(menu => {
+        menu.classList.remove('open');
+    });
 }
 
 // Add click event listeners to all toggle buttons
