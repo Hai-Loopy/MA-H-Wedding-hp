@@ -388,7 +388,26 @@ const kehadiranBtn = document.getElementById("kehadiran-btn");
 
 
 
+// ==================== MUSIC FOOTER BUTTON ====================
+// Make sure music button in footer works again
+document.addEventListener("DOMContentLoaded", function () {
+    const musicBtn = document.getElementById('music-btn');
+    const musicMenu = document.getElementById('music-menu');
 
+    if (musicBtn && musicMenu) {
+        musicBtn.addEventListener('click', function (e) {
+            e.stopPropagation();           // Prevent closing immediately
+            closeAllMenus();               // Close other open menus first
+
+            // Toggle the music menu
+            if (musicMenu.classList.contains('open')) {
+                musicMenu.classList.remove('open');
+            } else {
+                musicMenu.classList.add('open');
+            }
+        });
+    }
+});
 
 /** =====================================================
  *  Handle Form
