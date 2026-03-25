@@ -41,6 +41,18 @@ document.addEventListener('click', function unlockAudio() {
     }
 }, { once: true });
 
+// Music button in footer - toggle music menu
+const musicBtn = document.getElementById('music-btn');
+const musicMenu = document.getElementById('music-menu');
+
+if (musicBtn && musicMenu) {
+    musicBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        closeAllMenus();                    // close other menus first
+        musicMenu.classList.toggle('open');
+    });
+}
+
 
 
 
