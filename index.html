@@ -4,23 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SOCIAL PREVIEW (for WhatsApp, Telegram, etc.) -->
-    <meta property="og:title" content="Wedding Invitation - Chấn Hải & Mai Anh">
-    <meta property="og:description" content="25 April 2026 | 9:00 AM - 4:00 PM | Chợ Buộm, Yết Kiêu">
-    <meta property="og:image" content="https://raw.githubusercontent.com/Hai-Loopy/MA-H-Wedding-hp/refs/heads/main/images/preview.png"> <!-- ← CHANGE THIS -->
-    <meta property="og:url"   content="https://hai-loopy.github.io/MA-H-Wedding-hp/"> <!-- ← your GitHub Pages link -->
-    <meta property="og:type" content="website">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
 
-    <!-- Css Vendor -->
+    <!-- SOCIAL PREVIEW (WhatsApp, Telegram, Facebook, etc.) -->
+    <meta property="og:title" content="Wedding Invitation - Mai Anh & Chấn Hải ">
+    <meta property="og:description" content="25 April 2026 | 9:00 AM - 6:00 PM | Chợ Buộm, Thượng Bì, Gia Lộc, Hải Phòng, Vietnam">
+
+    <!-- Preview Image from GitHub (RAW link) - Corrected -->
+    <meta property="og:image" content="https://ma-h-wedding-sg.vercel.app/images/preview.png">
+
+    <meta property="og:url" content="https://ma-h-wedding-sg.vercel.app">
+    <meta property="og:type" content="website">
+    <meta property="og:image:width" content="1000">
+    <meta property="og:image:height" content="500">
+
+    <!-- Extra tags that help WhatsApp detect the image better -->
+    <meta property="og:image:type" content="image/png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://ma-h-wedding-sg.vercel.app/images/preview.png">
+
+    <!-- CSS Links -->
     <link rel="stylesheet" href="./css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Wedding Card H&MA</title>
 </head>
-
 <body>
     <div class="wrapper">
         <div id="overlay" class="overlay">
@@ -34,6 +41,7 @@
         </div>
     </div>
     <div class="card">
+        
         <div class="petal-container"></div>
         <!-- Intro Section -->
         <section class="intro">
@@ -275,16 +283,19 @@
     <i class="fa-brands fa-apple"></i>  <!-- or any icon you like, e.g. fa-map -->
     <span>Apple Maps</span>
 </button>
-
+      </div>
+            </div>
+        </div>  <!-- ✅ Properly closed -->
+    
     <div id="music-menu" class="toggle-menu">
         <div class="music">
             <h1>Play</h1>
             <p>Beautiful in White x Canon in D</p>
             <p>(Piano Cover by Riyandi Kusuma)</p>
-            <audio id="audio-player" controls autoplay loop>
-                <source type="audio/mp3"
-                    src="./music/Beautiful in White x Canon in D (Piano Cover by Riyandi Kusuma).mp3">
-            </audio>
+        
+           <audio id="audio-player" loop preload="auto">
+    <source src="./music/Beautiful in White x Canon in D (Piano Cover by Riyandi Kusuma).mp3" type="audio/mp3">
+</audio>
         </div>
     </div>
 
@@ -384,13 +395,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.11/tsparticles.min.js"> </script> -->
 
     <!-- Custom Js -->
-    <script src="./js/main.js"></script>
+    
+ <script src="./js/main.js"></script>
+
     <script>
     document.querySelector('.overlay').addEventListener('click', function() {
         document.querySelector('.wrapper').style.display = 'none';
         document.querySelector('.card').style.display = 'block';
     });
-</script>           
+</script>
+                
     <!-- Custom Js -->
     <!-- <script src="./js/main.js"></script> -->
 
