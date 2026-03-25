@@ -503,7 +503,14 @@ document.getElementById("btn-hadir").onclick = function() {
 document.getElementById("btn-tidak-hadir").onclick = function() {
     incrementCount('count_tidak_hadir.php', "Maaf, mungkin lain kali.", 'bx bxs-sad', 'rsvp-menu'); // Success message and optionally close RSVP menu
 };
-
+// Ensure audio controls are visible and working
+document.addEventListener("DOMContentLoaded", () => {
+    const audio = document.getElementById("audio-player");
+    if (audio) {
+        audio.controls = true;           // Force show controls
+        audio.style.width = "100%";      // Make sure it's full width
+    }
+});
 
 
 
